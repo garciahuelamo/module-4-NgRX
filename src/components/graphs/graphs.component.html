@@ -1,0 +1,22 @@
+<p>graphs works!</p>
+
+<div style="display: flex; gap: 2rem;">
+  <ngx-charts-line-chart
+    [results]="(lineData$ | async)"
+    [view]="[600, 400]"
+    [scheme]="'cool'"
+    [legend]="true"
+    [xAxis]="true"
+    [yAxis]="true"
+    [autoScale]="true">
+  </ngx-charts-line-chart>
+
+  <ngx-charts-bar-vertical
+    [results]="(barData$ | async)"
+    [view]="[600, 400]"
+    [scheme]="'vivid'"
+    [legend]="true"
+    [xAxis]="true"
+    [yAxis]="true">
+  </ngx-charts-bar-vertical>
+</div>
